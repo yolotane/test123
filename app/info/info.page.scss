@@ -1,0 +1,45 @@
+ion-button {
+    --background: #ffffff;
+    --color:#000000;
+    --background-activated:#f0f0f0;
+    text-align: center;
+}   
+.block {
+        text-align:right;
+        --box-shadow: none;
+        width:100% ;
+        vertical-align: middle;
+}
+.icon {
+    position:fixed;
+    height:100%;
+    left:0%;
+    zoom:3.5;
+    color:#006E80;
+}
+
+p {
+    zoom:1;
+    color:#c9c9c9;
+    text-align:left;
+
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    zoom:2.5;
+  }

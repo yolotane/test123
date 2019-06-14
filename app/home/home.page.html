@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Wedigi
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!beaconData; else beaconFound">
+
+      <div>
+          <p>Scanning for beacons</p>
+          <ion-icon name="bluetooth" class="center" style="margin:auto"></ion-icon>
+            <div class="center">
+        
+              <div class="loader" style="margin:auto">
+               
+              </div>
+            </div>
+          </div>
+  </div>
+  <ng-template #beaconFound>
+    <ion-card>
+      <ion-card-header>
+        Beacon Found
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>{{beaconData.address}}</ion-item>
+          <ion-item>{{beaconData.url}}</ion-item>
+          <ion-item>{{beaconData.rssi}}</ion-item>
+        </ion-list>
+        <a [href]="beaconData.url">URL</a>
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
+</ion-content>

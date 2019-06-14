@@ -1,0 +1,41 @@
+
+
+p {
+    zoom:1.5;
+    color:#c9c9c9;
+    text-align:center;
+    top:25%;
+}
+
+ion-icon {
+    zoom:4.0;
+    color:#006E80;
+}
+ion-title{
+    text-align:center;
+    color:#006E80
+}
+.center {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+.loader {
+    border: 16px solid #ffffff;
+    border-top: 16px solid #006E80;
+    border-bottom: 16px solid #006E80;
+
+    border-left: 16px solid #006E80;
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0%{transform:rotate(0deg); }
+    100% {transform: rotate(360deg);}
+}
